@@ -13,7 +13,7 @@ class VaultDoorTraining {
 	    System.out.println("Access denied!");
 	}
    }
-
+    
     // The password is below. Is it safe to put the password in the source code?
     // What if somebody stole our source code? Then they would know what our
     // password is. Hmm... I will think of some ways to improve the security
