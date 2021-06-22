@@ -1,1 +1,1 @@
-# CTFs writeups and solves
+# CTF Writeups
