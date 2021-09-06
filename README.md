@@ -4,5 +4,5 @@ For every challenge I solve, I store the writeup here (I learn better a topic wh
 
 **ENJOY!**
 
-*by luck4o*
+*by Lucas Melo (a.k.a luck4o)*
 
