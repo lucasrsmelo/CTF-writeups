@@ -208,10 +208,10 @@ As we can see, in the line 6 and row **nsp_pk**, the value is the same we've fou
 }
 ```
 
-The name is: "**evil mike**"
-And the email is: "**sidemaf155@5ubo.com**"
+The name is: "**evil mike**" and the email is: "**sidemaf155@5ubo.com**".
 
-Thus, we the full flag is:
+
+Thus, the full flag is:
 
 ```
 GrabCON{Skype_sidemaf155@5ubo.com_31337_Hax0r_Plan_evil_mike}
