@@ -14,4 +14,17 @@ $ find . -empty -type d -delete
 ``` 
 **This is a key point:** In Android filesystem, every application stores its data under the **/data/data** folder. Furthermore, Android uses SQLite to store most data (emails, text messages, etc).
 
+According to the challenge description, we must find the social media platform that were used. In this case, the most likely platform is Skype:
+
+<!---
+COLOCAR A IMAGEM DO DIRETÓRIO AQUI, DESTACANDO O SKYPE
+-->
+
+It gives us the first part of the flag:
+```
+GrabCON{Skype_<email>_<group_name>_<member_name>}
+```
+
+
+
 
