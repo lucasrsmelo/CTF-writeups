@@ -35,7 +35,7 @@ This tool is very straightforward. Just open the desired database there and star
 
 After searching all those databases, the **s4l-live:.cid.6c41bc4408002e1f.db** was the very interesting.
 To browse the tables, just click in the **Browse data** tab.
-Again, I browse all the tables and found some tables that caught my attention.
+I browse all the tables and found some tables that caught my attention.
 Then I selected the second row of the **conversationsv14** table and double-clicked the **nsp_data** column, which returns me the following:
 
 ```json
@@ -164,8 +164,56 @@ Analysing this json file, I found the likely group name as well as the group cre
 COLOCAR A EXATA PARTE ONDE FORAM ENCONTRADAS AS EVIDÊNCIAS
 -->
 
-At this point, we have the following flag:
+At this point, we have the following flag and the group creator member id:
 ```
 GrabCON{Skype_<email>_31337_Hax0r_Plan_<member_name>}
+```
+```json
+"creator": "8:live:.cid.6c41bc4408002e1f"
+```
+
+Now we just need to find the member name and its email. To accomplish this, go to the **profilecachev8** table:
+
+<!---
+COLOCAR PRINT DA TABELA DOS PERFIS
+-->
+
+As we can see, in the line 6 and row **nsp_pk**, the value is the same we've found for the group creator member id. Double click the column on the side and then the following json is shown:
+
+```json
+{
+    "_phoneNumbersForDbIndex": [],
+    "city": null,
+    "color": {
+        "colors": [
+            "#49409A",
+            "#8378DE"
+        ],
+        "key": "blue",
+        "primaryAccent": "#49409A",
+        "secondaryAccent": "#8378DE"
+    },
+    "country": null,
+    "displayNameOverride": "evil mike",
+    "emails": [
+        "sidemaf155@5ubo.com"
+    ],
+    "fetchedDate": 1630470959118,
+    "fullName": "evil mike",
+    "gender": 0,
+    "mri": "8:live:.cid.6c41bc4408002e1f",
+    "phoneHashes": [],
+    "phones": [],
+    "province": null
+}
+```
+
+The name is: "**evil mike**"
+And the email is: "**sidemaf155@5ubo.com**"
+
+Thus, we the full flag is:
+
+```
+GrabCON{Skype_sidemaf155@5ubo.com_31337_Hax0r_Plan_evil_mike}
 ```
 
