@@ -6,7 +6,7 @@ Once I've downloaded and unzipped the archive, the main directory extracted was 
 
 ![Directories](./assets/directories.png)
 
-Most of these directories were empty. To clean this, I ran the command:
+Most of these directories were empty. To clean this, I ran thefollowing command inside the "data" directory:
 
 ```bash
 $ find . -empty -type d -delete
