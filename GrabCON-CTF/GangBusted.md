@@ -6,9 +6,14 @@ Once I've downloaded and unzipped the archive, the main directory extracted was 
 
 ![Directories](./assets/directories.png)
 
-Most of these directories were empty. To clean this, I ran thefollowing command inside the "data" directory:
+When I listed the directory, I found that it was some acquired Android data.
+Most of these directories were empty. To clean this, I ran the following command inside the "data" directory:
 
 ```bash
 $ find . -empty -type d -delete
 ``` 
+In Android filesystem, every application stores its data under the **//data//data** folder. Furthermore, Android uses SQLite to store most data (emails, text messages, etc). **This is the key point**.
+
+
+
 
