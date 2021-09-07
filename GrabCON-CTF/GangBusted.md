@@ -31,7 +31,7 @@ Next steps, I used the **DB Browser for SQLite** to help me in the analysis.
 COLOCAR IMAGEM DO DB BROWSER AQUI
 -->
 
-This tool is very straightforward. Just open the desired database there and start the analysis.
+This tool is very straightforward. Just open the desired database and start the analysis.
 
 After searching all those databases, the **s4l-live:.cid.6c41bc4408002e1f.db** was the very interesting.
 To browse the tables, just click in the **Browse data** tab.
@@ -178,7 +178,7 @@ Now we just need to find the member name and its email. To accomplish this, go t
 COLOCAR PRINT DA TABELA DOS PERFIS
 -->
 
-As we can see, in the line 6 and row **nsp_pk**, the value is the same we've found for the group creator member id. Double click the column on the side and then the following json is shown:
+As we can see, in the line 6 and row **nsp_pk**, the value is the same we've found for the group creator member id. Double-click the column on the side and then the following json is shown:
 
 ```json
 {
