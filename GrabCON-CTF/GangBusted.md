@@ -16,9 +16,7 @@ $ find . -empty -type d -delete
 
 According to the challenge description, we must find the social media platform that were used. In this case, the most likely platform is Skype:
 
-<!---
-COLOCAR A IMAGEM DO DIRETÓRIO AQUI, DESTACANDO O SKYPE
--->
+![skype_folder](https://user-images.githubusercontent.com/34749742/132391523-2f5eb14e-c8ad-47a3-b777-14b4b283372b.png)
 
 It gives us the first part of the flag:
 ```
@@ -27,9 +25,7 @@ GrabCON{Skype_<email>_<group_name>_<member_name>}
 Then, there's a directory called "databases" inside the skype folder. This is the place where the Skype data is stored.
 Next steps, I used the **DB Browser for SQLite** to help me in the analysis.
 
-<!---
-COLOCAR IMAGEM DO DB BROWSER AQUI
--->
+![db-browser-sqlite](https://user-images.githubusercontent.com/34749742/132391597-10ccfedf-24dc-420e-823b-7e95b99c38bd.png)
 
 This tool is very straightforward. Just open the desired database and start the analysis.
 
@@ -160,9 +156,7 @@ Then I selected the second row of the **conversationsv14** table and double-clic
 ```
 Analysing this json file, I found the likely group name as well as the group creator id number:
 
-<!---
-COLOCAR A EXATA PARTE ONDE FORAM ENCONTRADAS AS EVIDÊNCIAS
--->
+![evidencia-group-name](https://user-images.githubusercontent.com/34749742/132391717-44c96dee-349c-4c38-b8f5-b7d19324cc43.png)
 
 At this point, we have the following flag and the group creator member id:
 ```
@@ -174,9 +168,7 @@ GrabCON{Skype_<email>_31337_Hax0r_Plan_<member_name>}
 
 Now we just need to find the member name and its email. To accomplish this, go to the **profilecachev8** table:
 
-<!---
-COLOCAR PRINT DA TABELA DOS PERFIS
--->
+![profile-table](https://user-images.githubusercontent.com/34749742/132391875-0797a766-ed05-4a1c-bcc3-9fae4b0af991.png)
 
 As we can see, in the line 6 and row **nsp_pk**, the value is the same we've found for the group creator member id. Double-click the column on the side and then the following json is shown:
 
