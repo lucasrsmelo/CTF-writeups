@@ -12,8 +12,6 @@ Most of these directories were empty. To clean this, I ran the following command
 ```bash
 $ find . -empty -type d -delete
 ``` 
-In Android filesystem, every application stores its data under the **//data//data** folder. Furthermore, Android uses SQLite to store most data (emails, text messages, etc). **This is the key point**.
-
-
+**This is a key point:** In Android filesystem, every application stores its data under the **/data/data** folder. Furthermore, Android uses SQLite to store most data (emails, text messages, etc).
 
 
