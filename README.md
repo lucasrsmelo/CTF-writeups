@@ -1,6 +1,6 @@
 # CTF Writeups
 
-For every challenge I solve, I store the writeup here (I learn better a topic when I explain it)
+This is about how I solve my CTF challenges
 
 **ENJOY!**
 
