@@ -1,6 +1,6 @@
 # CTF Writeups
 
-All my CTF challenges solves
+All my CTF solves
 
 **ENJOY!**
 
